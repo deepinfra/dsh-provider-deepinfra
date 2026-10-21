@@ -1,0 +1,5 @@
+# Adds the `deepinfra` provider route beside the profile's own adapters.
+# It does not patch `llm-pi-ai`, so routes a user configured there are untouched.
+- insert:
+    - id: provider-deepinfra
+      name: '@deepinfra/dsh-provider-deepinfra'
