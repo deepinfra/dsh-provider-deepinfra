@@ -1,0 +1,54 @@
+{
+  "name": "@deepinfra/dsh-provider-deepinfra",
+  "version": "0.1.0",
+  "description": "DeepInfra provider for DeepSeek Harness: live model catalog and streaming chat completions over DeepInfra's OpenAI-compatible API.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "cordis.patch.yml",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=22.15"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-attachment": ">=0.2.1-rc.2",
+    "@deepseek-ai/dsh-launch-environment": ">=0.2.1-rc.2",
+    "@deepseek-ai/dsh-llm": ">=0.2.1-rc.2",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-attachment": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-launch-environment": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-llm": "0.2.1-rc.2",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepinfra/dsh-provider-deepinfra.git"
+  },
+  "homepage": "https://github.com/deepinfra/dsh-provider-deepinfra#readme",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "deepinfra",
+    "llm",
+    "cordis-plugin"
+  ]
+}
